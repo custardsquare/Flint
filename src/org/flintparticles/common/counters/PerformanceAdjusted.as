@@ -196,7 +196,7 @@ package org.flintparticles.common.counters
 						_rate = Math.floor( ( _rate + _rateMin ) * 0.5 );
 						_times.length = 0;
 						
-						if( !( _timeToRateCheck = Particle( emitter.particlesArray[0] ).lifetime ) )
+						if( !( _timeToRateCheck == Particle( emitter.particlesArray[0] ).lifetime ) )
 						{
 							_timeToRateCheck = 2;
 						}
